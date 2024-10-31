@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css"> 
+</head>
+<body>
+    <header>
+        <div class="header-container">
+          <div class="logo-container">
+            <img src="/img/images.jpeg" alt="Logo" class="logo">
+            </div>
+          <nav class="navbar">
+            <ul>
+                <li><a href="/index.html" class="active">INICIO</a></li>
+                <li><a href="products.html" class="active">PRODUCTOS</a></li>
+                <li><a href="contact.html" class="active">CONTACTO</a></li>
+                <li><a href="about.html" class="active">SOBRE NOSOTROS</a></li>
+            </ul>            
+          </nav>
+        </div>
+    </header>
+    <main>
+      <section>
+        <form action="https://formspree.io/f/xanyeejk" method="POST" class="contact-form">
+          <h2>Contacto</h2>
+          
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+</body>
+</html>
