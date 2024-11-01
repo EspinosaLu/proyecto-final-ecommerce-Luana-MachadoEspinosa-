@@ -103,3 +103,78 @@
   .contact-form button:hover {
     background-color: #218838;
   }
+
+  .footer {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2), inset 0px 1px 1px rgba(255, 255, 255, 0.5);
+    margin-top: 30px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .footer-section {
+    width: 22%; /* Ajusta el ancho según el espacio disponible */
+    min-width: 200px; /* Para que no sea demasiado estrecho en pantallas pequeñas */
+    margin-bottom: 20px;
+  }
+  .footer-section h3 {
+    color: #e9801e;
+    margin-bottom: 10px;
+    font-family: "Nunito";
+    letter-spacing: 2px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-section ul li a {
+    color: #e9801e;
+    text-decoration: none;
+  }
+  
+  .payment-methods img,
+  .footer-section img {
+    width: 50px;
+    margin: 5px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #d3d3d3;
+    padding-top: 15px;
+    color: #e9801e;
+    font-size: 12px;
+  }
+  
+  .footer-bottom a {
+    color: #e9801e;
+    text-decoration: underline;
+  }
+  
+  /*.footer {
+    background-color: #f4f4f4;  Color de fondo 
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+     Sombra para el efecto de relieve 
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2), inset 0px 1px 1px rgba(255, 255, 255, 0.5);
+     Bordes redondeados opcionales 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 30px;
+  }*/
