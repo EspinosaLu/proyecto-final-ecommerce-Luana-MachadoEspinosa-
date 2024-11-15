@@ -7,8 +7,11 @@
     max-width: 1200px;
     margin: 0 auto;
   }
-  
-  /* Logo y título */
+
+  main p{
+    font-family: 'Open Sans', sans-serif;
+  }
+
   .logo-container {
     display: flex;
     align-items: center;
@@ -26,7 +29,6 @@
     font-family: Arial, sans-serif;
   }
   
-  /* Barra de navegación */
   .navbar ul {
     list-style-type: none;
     display: flex;
@@ -37,18 +39,17 @@
   
   .navbar a {
     text-decoration: none;
-    color: #000000; /* Color predeterminado */
+    color: #000000; 
     font-size: 16px;   
   }
-  
-  /* Enlace activo */
+
   .navbar a.active {
-    color: #000000; /* Color del enlace activo */
+    color: #000000; 
   }
   
   /* Color al pasar el cursor */
   .navbar a:hover {
-    color: #e9801e; /* Color al pasar el cursor */
+    color: #e9801e;
   }
   
   /* Color al hacer clic */
@@ -61,7 +62,7 @@
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #ffa551;
     border-radius: 5px;
     background-color: #f9f9f9;
   }
@@ -79,13 +80,13 @@
 
   .contact-form input,
   .contact-form textarea {
-    width: calc(100% - 5px); /* Ajuste del ancho para padding */
+    width: calc(100% - 5px);
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    box-sizing: border-box; /* Incluir padding en el cálculo de width */
+    box-sizing: border-box;
   }
 
   .contact-form button {
@@ -121,8 +122,8 @@
   }
   
   .footer-section {
-    width: 22%; /* Ajusta el ancho según el espacio disponible */
-    min-width: 200px; /* Para que no sea demasiado estrecho en pantallas pequeñas */
+    width: 22%;
+    min-width: 200px;
     margin-bottom: 20px;
   }
   .footer-section h3 {
@@ -165,16 +166,79 @@
     text-decoration: underline;
   }
   
-  /*.footer {
-    background-color: #f4f4f4;  Color de fondo 
-    padding: 20px;
-    text-align: center;
-    font-size: 14px;
-    color: #333;
-     Sombra para el efecto de relieve 
-    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2), inset 0px 1px 1px rgba(255, 255, 255, 0.5);
-     Bordes redondeados opcionales 
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin-top: 30px;
-  }*/
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #ffa551;
+  border: 1px solid #e9801e;
+  border-radius: 10px;
+  width: 220px;
+  height: 250;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+    height: auto; 
+  }
+}
+
+.reseñas-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.reseña-card {
+  padding: 15px;
+  border: 1px solid #ffa551;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 15px;
+  }
+
+  .reseñas-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
