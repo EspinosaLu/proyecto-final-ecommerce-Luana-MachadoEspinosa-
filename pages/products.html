@@ -18,35 +18,58 @@
                 <li><a href="/index.html" class="active">INICIO</a></li>
                 <li><a href="products.html" class="active">PRODUCTOS</a></li>
                 <li><a href="contact.html" class="active">CONTACTO</a></li>
-                <li><a href="about.html" class="active">SOBRE NOSOTROS</a></li>
-            </ul>            
+                <li><a href="carrito.html" class="active">CARRITO</a></li>
+                <li>
+                  <span>🛒</span>
+                  <span id="cart-total-header">0</span>   
+                </li>
+            </ul>    
+                 
           </nav>
         </div>
     </header>
-    <main>
+    <main> 
       <section class="card-container">
         <div class="card">
           <h2>Milanesa de pollo</h2>
           <img src="/img/producto1.jpg" alt="Producto 1">
-          <a href="#">Ver más</a>
+          <a href="#" class="ver-mas" data-descripcion="Deliciosa milanesa de pollo crocante.">Ver más</a>
+          <button class="agregar-carrito" data-id="2" data-nombre="Milanesa de pollo" data-precio="15">
+            Añadir al carrito
+          </button>
         </div>
         <div class="card">
           <h2>Pollo entero</h2>
           <img src="/img/producto2.jpg" alt="Producto 2">
-          <a href="#">Ver más</a>
+          <a href="#" class="ver-mas" data-descripcion="Pollo entero fresco listo para preparar.">Ver más</a>
+          <button class="agregar-carrito" data-id="1" data-nombre="Pollo entero" data-precio="50">
+            Añadir al carrito
+          </button>
         </div>
         <div class="card">
           <h2>Pechugas</h2>
           <img src="/img/producto3.jpg" alt="Producto 3">
-          <a href="#">Ver más</a>
+          <a href="#" class="ver-mas" data-descripcion="Pechugas deshuesadas perfectas para cocinar.">Ver más</a>
+          <button class="agregar-carrito" data-id="4" data-nombre="Pechugas" data-precio="30">
+            Añadir al carrito
+          </button>
         </div>
         <div class="card">
           <h2>Pamplona</h2>
           <img src="/img/producto4.webp" alt="Producto 4">
-          <a href="#">Ver más</a>
+          <a href="#" class="ver-mas" data-descripcion="Pamplona rellena, ideal para compartir.">Ver más</a>
+          <button class="agregar-carrito" data-id="3" data-nombre="Pamplona" data-precio="25">
+            Añadir al carrito
+          </button>
         </div>
       </section>
+    
+      <div id="descripcion-ampliada" style="display: none; padding: 20px; border: 1px solid #ccc; margin-top: 20px;">
+        <h3 id="descripcion-titulo"></h3>
+        <p id="descripcion-detalle"></p>
+      </div>
     </main>
+
     <footer class="footer">
       <div class="footer-container">
         
@@ -98,5 +121,7 @@
         <p>Copyright Granja Valu - 2024. Todos los derechos reservados.</p>
       </div>
   </footer>
+
+  <script src="/script.js" defer></script>
 </body>
 </html>

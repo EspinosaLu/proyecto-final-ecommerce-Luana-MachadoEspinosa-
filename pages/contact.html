@@ -18,7 +18,11 @@
                 <li><a href="/index.html" class="active">INICIO</a></li>
                 <li><a href="products.html" class="active">PRODUCTOS</a></li>
                 <li><a href="contact.html" class="active">CONTACTO</a></li>
-                <li><a href="about.html" class="active">SOBRE NOSOTROS</a></li>
+                <li><a href="carrito.html" class="active">CARRITO</a></li>
+                <li>
+                  <span>🛒</span>
+                  <span id="cart-total-header">0</span>   
+                </li>
             </ul>            
           </nav>
         </div>
@@ -37,7 +41,7 @@
           <label for="message">Mensaje</label>
           <textarea id="message" name="message" rows="5" required></textarea>
           
-          <button type="submit">Enviar</button>
+          <button type="submit" id="submitForm">Enviar</button>
         </form>
       </section>
 
@@ -111,5 +115,7 @@
         <p>Copyright Granja Valu - 2024. Todos los derechos reservados.</p>
       </div>
   </footer>
+
+  <script src="/script.js"></script>
 </body>
 </html>

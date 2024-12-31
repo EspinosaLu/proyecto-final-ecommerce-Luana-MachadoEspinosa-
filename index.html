@@ -18,13 +18,17 @@
                 <li><a href="index.html" class="active">INICIO</a></li>
                 <li><a href="/pages/products.html" class="active">PRODUCTOS</a></li>
                 <li><a href="/pages/contact.html" class="active">CONTACTO</a></li>
-                <li><a href="/pages/about.html" class="active">SOBRE NOSOTROS</a></li>
+                <li><a href="/pages/carrito.html" class="active">CARRITO</a></li>
+                <li>
+                  <span>🛒</span>
+                  <span id="cart-total-header">0</span>   
+                </li>
             </ul>            
           </nav>
-        </div>
+        </div>        
     </header>
 
-    <main>
+    <main class="container">
         <p>Bienvenido/a</p>
     </main>
 
@@ -33,7 +37,6 @@
     <footer class="footer">
         <div class="footer-container">
           
-          <!-- Sección de Navegación -->
           <div class="footer-section">
             <h3>NAVEGACIÓN</h3>
             <ul>
@@ -43,12 +46,10 @@
               <li><a href="pages/about.html">Sobre Nosotros</a></li>
             </ul>
           </div>
-      
-          <!-- Sección de Medios de Pago -->
+
           <div class="footer-section">
             <h3>MEDIOS DE PAGO</h3>
             <div class="payment-methods">
-              <!-- Coloca aquí las imágenes de las tarjetas de crédito -->
               <img src="img/visa.png" alt="Visa">
               <img src="img/visadebit.png" alt="Visa Debito">
               <img src="img/mastercard.png" alt="MasterCard">
@@ -58,7 +59,6 @@
             </div>
           </div>
       
-          <!-- Sección de Contacto -->
           <div class="footer-section">
             <h3>CONTACTANOS</h3>
             <p><i class="fa fa-phone"></i> 1162240302</p>
@@ -81,10 +81,11 @@
 
         </div>
       
-        <!-- Texto de Copyright y Enlaces -->
         <div class="footer-bottom">
           <p>Copyright Granja Valu - 2024. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
